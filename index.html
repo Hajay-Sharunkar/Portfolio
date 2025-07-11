@@ -8,62 +8,50 @@
 </head>
 <body>
   <header>
-    <h1>Hajay Sharunkar S B</h1>
+    <h1>Hajay</h1>
     <p>Cybersecurity Student | SOC | Pentesting | Incident Response</p>
+    <div class="theme-buttons">
+      <button onclick="setTheme('dark')">Dark</button>
+      <button onclick="setTheme('light')">Light</button>
+      <button onclick="setTheme('cyber')">Cyber Blue</button>
+    </div>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I’m a passionate cybersecurity student with hands-on experience in SIEM, log analysis, and penetration testing.
-      I enjoy learning offensive and defensive techniques, participating in CTFs, and automating security tasks using Python.
-    </p>
+    <p>I’m a passionate cybersecurity student with hands-on experience in SIEM, log analysis, and penetration testing.</p>
   </section>
 
   <section id="skills">
     <h2>Skills & Tools</h2>
     <ul>
-      <li>🛡️ SIEM (ELK, Splunk)</li>
-      <li>🔍 Wireshark, Nmap, Burp Suite</li>
-      <li>💻 Linux, Bash, Python, PowerShell</li>
-      <li>🧰 TryHackMe, Hack The Box</li>
+      <li>SIEM (ELK, Splunk)</li>
+      <li>Wireshark, Nmap, Burp Suite</li>
+      <li>Linux, Bash, Python</li>
     </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>🔧 SIEM Log Analysis Dashboard</h3>
-      <p>Built a real-time log monitoring dashboard using ELK Stack to detect brute-force and suspicious login attempts.</p>
+      <h3>SIEM Log Dashboard</h3>
+      <p>Real-time log monitoring with ELK stack.</p>
     </div>
-    <div class="project">
-      <h3>🐍 Python Malware Scanner</h3>
-      <p>Developed a script that detects malicious files based on hashing and basic signature checks.</p>
-    </div>
-    <div class="project">
-      <h3>🕵️ TryHackMe & HTB Writeups</h3>
-      <p>Documented solutions to various CTF labs and challenges.</p>
-    </div>
-  </section>
-
-  <section id="certs">
-    <h2>Certifications</h2>
-    <ul>
-      <li>CompTIA Security+ (in progress)</li>
-      <li>TryHackMe: Complete Beginner Path</li>
-      <li>Google Cybersecurity Certificate</li>
-    </ul>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
+    <h2>Contact</h2>
     <p>Email: hajay@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
   </section>
 
   <footer>
     <p>© 2025 Hajay | Built with ❤️</p>
   </footer>
+
+  <script>
+    function setTheme(theme) {
+      document.body.className = theme;
+    }
+  </script>
 </body>
 </html>

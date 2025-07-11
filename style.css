@@ -1,44 +1,15 @@
-:root {
-  --bg-color: #0a0a0a;
-  --text-color: #f5f5f5;
-  --accent-color: #00ffaa;
-  --box-color: #121212;
-  --shadow-color: #00ffaa44;
-}
-
-/* Dark theme (default) */
-body.dark {
-  --bg-color: #0a0a0a;
-  --text-color: #f5f5f5;
-  --accent-color: #00ffaa;
-  --box-color: #121212;
-  --shadow-color: #00ffaa44;
-}
-
-/* Light theme */
-body.light {
-  --bg-color: #ffffff;
-  --text-color: #222222;
-  --accent-color: #007acc;
-  --box-color: #f0f0f0;
-  --shadow-color: #007acc33;
-}
-
-/* Cyber Blue theme */
-body.cyber {
-  --bg-color: #001f3f;
-  --text-color: #dbefff;
-  --accent-color: #00dfff;
-  --box-color: #003366;
-  --shadow-color: #00dfff55;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #0a0a0a;
+  color: #f5f5f5;
   line-height: 1.6;
   padding: 20px;
-  font-family: "Segoe UI", sans-serif;
 }
 
 header {
@@ -49,7 +20,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: var(--accent-color);
+  color: #00ffaa;
 }
 
 header p {
@@ -57,37 +28,23 @@ header p {
   color: #aaa;
 }
 
-.theme-buttons button {
-  margin: 10px 5px 0;
-  padding: 8px 16px;
-  background: var(--accent-color);
-  color: var(--bg-color);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.theme-buttons button:hover {
-  opacity: 0.8;
-}
-
 section {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: var(--box-color);
+  background-color: #121212;
   border-radius: 8px;
-  box-shadow: 0 0 8px var(--shadow-color);
+  box-shadow: 0 0 8px #00ffaa44;
 }
 
 h2 {
-  color: var(--accent-color);
+  color: #00ffaa;
   margin-bottom: 15px;
 }
 
 ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 ul li {
@@ -96,6 +53,15 @@ ul li {
 
 .project {
   margin-bottom: 20px;
+}
+
+a {
+  color: #00ffaa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
